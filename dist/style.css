@@ -1,0 +1,55 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+
+/* global */
+
+#header {
+    text-align: center;
+    padding: 1rem;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.tab {
+    color: blue;
+    font-size: 20px;
+    width: 100vw;
+}
+
+
+/* menu  */
+
+img {
+    padding-top: 5rem;
+    height: 180px;
+    width: 180px;
+}
+
+
+
