@@ -4,7 +4,7 @@ function createAbout() {
 
   const title = document.createElement('h2');
   title.classList.add('section-title');
-  title.textContent = 'About Us';
+  title.textContent = 'About';
 
   about.appendChild(title);
 
