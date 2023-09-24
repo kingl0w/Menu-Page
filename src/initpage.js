@@ -51,12 +51,12 @@ function createFooter(id, text) {
 
 export default function load() {
     const content = document.getElementById('content');
-    //header
-    const header = createHeading('header', 'Welcome to Mellow World');
-    content.appendChild(header);
     //nav
     const nav = createNav('nav');
     content.appendChild(nav);
+    //header
+    const header = createHeading('header', 'Welcome to Mellow World');
+    content.appendChild(header);
     //main
     const main = createMain('main-content');
     content.appendChild(main);
