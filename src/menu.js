@@ -52,6 +52,9 @@ export default function loadMenu() {
   content.textContent = '';
   activateBtn('menu');
 
+  const menuContainer = document.createElement('div');
+  menuContainer.classList.add('menu');
+
   const foods = [
     createMenuItem(lamb, 'Lamb Kebab', '$18', 'Delicious fresh kebab'),
     createMenuItem(
@@ -101,4 +104,6 @@ export default function loadMenu() {
   foods.forEach((food) => {
     content.appendChild(food);
   });
+
+  content.appendChild(menuContainer);
 }

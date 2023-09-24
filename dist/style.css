@@ -1,7 +1,12 @@
-* {
-  font-family: 'Roboto', sans-serif;
+body, html {
+  background-color: rgb(224, 231, 181);
   padding: 0;
   margin: 0;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 .flex-layout {
@@ -22,6 +27,8 @@
 #header {
   text-align: center;
   padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffff;
 }
 
 #nav {
@@ -30,51 +37,71 @@
 }
 
 #footer {
-  text-align: center;
-  bottom: 0;
   position: absolute;
-  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  text-shadow: 0px 4px 20px rgb(80, 16, 16);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .tab {
-  color: blue;
+  color: #ffff;
   font-size: 20px;
   width: 100vw;
   height: 5rem;
   border: none;
+  background-color: rgba(0, 0, 0, 0.2);
 }
+
+button:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+
 
 /* menu  */
 
 .food {
-  width: 220px;
-  text-align: center;
-  padding-top: 2rem;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  
 }
 
 .img-container {
-  padding: 20px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  width: 150px;
+  margin-right: 20px;
 }
 
 .food img {
-  height: 150px;
-  width: 150px;
-  display: block;
-  margin: 0 auto;
+ max-width: 100%;
 }
 
 .food .description {
-  margin: 0;
+ flex-grow: 1;
+}
+
+.menu {
+  background-color: #fff;
 }
 
 /* about */
 
 .section {
   text-align: center;
-  padding-top: 4rem;
 }
 
 .section-title {
@@ -87,11 +114,27 @@
 }
 
 .chef-img {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
+  max-height: 400px;
+  width: 100%;
   display: block;
-  margin: 2rem auto;
+  margin: 0 auto;
+}
+
+.chef-container {
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.home-about {
+  background-image: url('../assets/aboutbackground2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-position-y: 25%;
+  color: #fff; 
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); 
+  padding: 4rem 0; 
+  height: 80vh;
 }
 
 /* contact */
