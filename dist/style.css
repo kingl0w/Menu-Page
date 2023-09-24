@@ -72,22 +72,31 @@ button:hover {
 /* menu  */
 
 .food {
-  width: 100%;
+  width: 80%;
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4rem;
   padding: 5rem;
-  
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.food:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 .img-container {
-  width: 150px;
+  width: 200px;
   margin-right: 20px;
 }
 
 .food img {
- max-width: 100%;
+ height: 145px;
+ width: auto;
 }
 
 .food .description {
