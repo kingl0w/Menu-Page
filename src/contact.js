@@ -8,21 +8,40 @@ function activateBtn(id) {
 
 function createSection(name, data) {
     const section = document.createElement('section');
-    section.classList.add('section');
+    section.classList.add('contact-section');
 
     const title = document.createElement('h2');
-    title.classList.add('section-title');
+    title.classList.add('contact-section-title');
     title.textContent = name;
     section.appendChild(title);
 
     data.forEach((d) => {
         const paragraph = document.createElement('p');
-        paragraph.classList.add('section-description');
+        paragraph.classList.add('contact-section-description');
         paragraph.textContent = d;
         section.appendChild(paragraph);
     })
 
     return section;
+}
+
+function createGoogleMap() {
+    const mapContainer = document.createElement('div');
+    mapContainer.classList.add('mapouter');
+
+    const gmapCanvas = document.createElement('div');
+    gmapCanvas.classList.add('gmap-canvas');
+
+    const iframe = document.createElement('iframe');
+    iframe.width = '500';
+    iframe.height = '340';
+    iframe.id = 'gmap_canvas';
+    iframe.src = 'https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed';
+    
+    gmapCanvas.appendChild(iframe);
+    mapContainer.appendChild(gmapCanvas);
+
+    return mapContainer;
 }
 
 export default function loadContact() {
@@ -38,10 +57,13 @@ export default function loadContact() {
     ]);
     
     const address = createSection('Address', [
-        'location#1',
-        'location#2'
+        '2880 Broadway, New York, NY, 10025'
+        
     ]);
+
+    const googleMap = createGoogleMap();
 
     content.appendChild(phoneNumber);
     content.appendChild(address);
+    content.appendChild(googleMap);
 }

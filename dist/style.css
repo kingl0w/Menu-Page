@@ -83,15 +83,14 @@ button:hover {
 /* menu  */
 
 .food {
-  width: 80%;
+  width: 70%;
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
   padding: 5rem;
-  height: 240px;
-  background-color: rgba(0, 0, 0, 0.2);
+  height: 210px;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
 }
@@ -152,3 +151,58 @@ button:hover {
 }
 
 /* contact */
+
+.gmap-canvas {
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.contact-section {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.contact-section-title {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+
+  body, html {
+    background-size: cover;
+  }
+
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .food {
+   padding: 1rem;
+   max-width: 100%;
+   background: none;
+  }
+
+  .food img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .img-container {
+    height: 100px;
+    width: 100px;
+    background: none;
+  }
+
+  .food .description {
+    text-align: center;
+  }
+
+  #footer {
+    position: relative;
+  }
+}
