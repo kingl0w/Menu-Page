@@ -76,8 +76,9 @@ body, html {
 }
 
 button:hover {
-  color: yellow;
+  color: white;
   cursor: pointer;
+  border-bottom: 2px solid white;
 }
 
 /* menu  */
@@ -154,7 +155,6 @@ button:hover {
 
 .gmap-canvas {
   padding: 2rem;
-  border-radius: 4px;
 }
 
 .contact-section {
