@@ -1,4 +1,3 @@
-import chefImg from '../assets/aboutbackground2.jpg';
 
 function createAbout() {
   const about = document.createElement('section');

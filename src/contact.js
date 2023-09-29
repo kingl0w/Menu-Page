@@ -46,6 +46,7 @@ function createGoogleMap() {
 
 export default function loadContact() {
     const content = document.getElementById('main-content');
+    
     content.classList.add('flex-layout');
     content.classList.remove('grid-layout');
     content.textContent = '';
