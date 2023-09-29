@@ -123,6 +123,7 @@ button:hover {
 .section {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  padding-top: 5rem;
 }
 
 .section-title {
