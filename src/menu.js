@@ -23,8 +23,9 @@ function createMenuItem(src, text, price, alt) {
   imgContainer.classList.add('img-container');
 
   const img = document.createElement('img');
-  img.setAttribute('src', src);
+  img.setAttribute('src', src); 
   img.setAttribute('alt', alt);
+  img.setAttribute('loading', 'lazy');
 
   const description = document.createElement('div');
   description.classList.add('description');

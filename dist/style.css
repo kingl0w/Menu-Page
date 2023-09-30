@@ -81,6 +81,36 @@ button:hover {
   border-bottom: 2px solid white;
 }
 
+
+#content {
+  animation: slide-in 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; 
+  opacity: 1; 
+}
+
+
+.main-content {
+  animation: slide-in 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; 
+  opacity: 1; 
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 /* menu  */
 
 .food {
