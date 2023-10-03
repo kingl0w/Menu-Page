@@ -236,4 +236,12 @@ button:hover {
   #footer {
     position: relative;
   }
+
+  .section {
+    padding: 1rem;
+  }
+
+  #header {
+    font-size: 3rem;
+  }
 }
