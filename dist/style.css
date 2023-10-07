@@ -55,7 +55,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 40px;
   color: white;
   text-align: center;
   font-size: 12px;
@@ -63,7 +63,7 @@ body, html {
   text-shadow: 0px 4px 20px rgb(80, 16, 16);
   background-color: rgba(0, 0, 0, 0.2);
   font-family: 'Roboto', sans-serif;
-  padding: 0.5rem;
+  
 }
 
 a:hover {
@@ -273,13 +273,28 @@ i {
   body, html {
     background-size: cover;
   }
-  
+
   .grid-layout {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  #content {
+    flex: 1; 
+  }
+
   #footer {
-    position: relative;
+    position: fixed;
+    padding: 0;
   }
 }
 
