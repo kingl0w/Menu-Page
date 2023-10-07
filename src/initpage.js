@@ -63,5 +63,24 @@ export default function load() {
     //footer
     const footer = createFooter('footer', 'A taddymason creation');
     content.appendChild(footer);
+
+    footer.style.display = 'none';
+
+    const githubLink = document.createElement('a');
+    githubLink.setAttribute('href', 'https://github.com/kingl0w'); 
+    githubLink.setAttribute('target', '_blank'); 
+    githubLink.setAttribute('rel', 'noopener noreferrer'); 
+
+    const githubIcon = document.createElement('i');
+    githubIcon.classList.add('fab', 'fa-github'); 
+    githubIcon.setAttribute('aria-hidden', 'true');
+    
+
+    githubLink.appendChild(githubIcon);
+    footer.appendChild(githubLink);
+
+    setTimeout(() => {
+        footer.style.display = 'block';
+      }, 1000);
 }
 
